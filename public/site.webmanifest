@@ -1,14 +1,14 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Cloudcode Hosting",
+    "short_name": "Cloudcode",
     "icons": [
        {
-          "src": "/android-chrome-192x192.png",
+          "src": "https://github.com/RumiDaNeko/img.rumi.public/blob/main/PfPNySWvbS4gIhibtGrYWTgdPOZYcY7xE2ZPGVEq.png?raw=true",
           "sizes": "192x192",
           "type": "image/png"
        },
        {
-        "src": "/android-chrome-512x512.png",
+        "src": "https://github.com/RumiDaNeko/img.rumi.public/blob/main/PfPNySWvbS4gIhibtGrYWTgdPOZYcY7xE2ZPGVEq.png?raw=true",
         "sizes": "512x512",
         "type": "image/png"
         }
