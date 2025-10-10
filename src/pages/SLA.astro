@@ -1,0 +1,166 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  description="CloudCode Service Level Agreement (SLA) — uptime, support response times, service credits, and responsibilities."
+  title="Service Level Agreement · CloudCode"
+>
+  <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+    <div class="sm:pb-20 flex flex-col gap-4 pb-16 text-center">
+      <h1 class="text-4xl font-medium tracking-tight sm:text-5xl">Service Level Agreement (SLA)</h1>
+      <p class="text-base">Effective Date: February 14, 2025</p>
+      <p class="text-sm text-gray-400">Last Updated: February 14, 2025</p>
+    </div>
+
+    <div class="prose max-w-none space-y-6">
+      <h2>1. Overview</h2>
+      <p>
+        This Service Level Agreement (SLA) outlines the service commitments CloudCode provides to its customers,
+        including uptime guarantees, support response times, and responsibilities for both parties. This SLA applies
+        to all CloudCode services unless otherwise specified in a separate agreement.
+      </p>
+
+      <h2>2. Service Commitment</h2>
+      <p>
+        CloudCode aims to provide a <strong>99.9% uptime</strong> guarantee for its hosting and development solutions.
+        This means services will be available for at least 99.9% of each calendar month, excluding scheduled maintenance
+        and force majeure events.
+      </p>
+
+      <h3>2.1 Uptime Calculation</h3>
+      <p>
+        Uptime is calculated as:
+      </p>
+      <pre class="rounded-md bg-gray-900 p-4 text-sm text-white">
+((Total minutes in a month - Downtime minutes) / Total minutes in a month) × 100%
+      </pre>
+      <p>
+        If uptime falls below 99.9% within a calendar month, customers may be eligible for service credits as described
+        in Section 5.
+      </p>
+
+      <h2>3. Support & Response Times</h2>
+      <p>CloudCode provides support through the ticketing system. Response targets are listed below:</p>
+
+      <div class="overflow-x-auto rounded-md border">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="bg-gray-800 text-white">
+              <th class="px-4 py-3">Severity</th>
+              <th class="px-4 py-3">Issue Description</th>
+              <th class="px-4 py-3">Response Time (target)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-3">Critical (P1)</td>
+              <td class="px-4 py-3">Full service outage or major failure affecting all users</td>
+              <td class="px-4 py-3">1 hour</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-3">High (P2)</td>
+              <td class="px-4 py-3">Partial outage or major performance degradation</td>
+              <td class="px-4 py-3">4 hours</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-3">Medium (P3)</td>
+              <td class="px-4 py-3">Non-critical issue affecting some users</td>
+              <td class="px-4 py-3">12 hours</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-3">Low (P4)</td>
+              <td class="px-4 py-3">General inquiries, minor bugs, or feature requests</td>
+              <td class="px-4 py-3">24 hours</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><strong>Support hours:</strong> 24/7</p>
+
+      <h2>4. Maintenance & Downtime</h2>
+      <p>
+        CloudCode may perform scheduled maintenance to update or improve services.
+      </p>
+      <ul>
+        <li><strong>Planned maintenance:</strong> Customers will be notified at least 48 hours in advance.</li>
+        <li><strong>Emergency maintenance:</strong> Performed when urgent fixes are required; notifications are sent as soon as possible.</li>
+      </ul>
+      <p>Downtime caused by scheduled maintenance is excluded from uptime calculations.</p>
+
+      <h2>5. Service Credits</h2>
+      <p>If CloudCode fails to meet the 99.9% uptime commitment, customers may request service credits according to the tiers below:</p>
+
+      <div class="overflow-x-auto rounded-md border">
+        <table class="w-full text-left">
+          <thead>
+            <tr class="bg-gray-800 text-white">
+              <th class="px-4 py-3">Monthly Uptime</th>
+              <th class="px-4 py-3">Service Credit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-3">99.9% or higher</td>
+              <td class="px-4 py-3">No credit</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-3">99.0% – 99.89%</td>
+              <td class="px-4 py-3">5% credit</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-3">95.0% – 98.99%</td>
+              <td class="px-4 py-3">10% credit</td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-3">Below 95.0%</td>
+              <td class="px-4 py-3">20% credit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Credit Request Process</h3>
+      <ul>
+        <li>Submit a credit request within <strong>7 days</strong> of the downtime incident.</li>
+        <li>Credits apply only to future invoices and are not refundable in cash.</li>
+        <li>Service credits are the sole remedy for SLA violations.</li>
+      </ul>
+
+      <h2>6. Exclusions</h2>
+      <p>This SLA does not apply to downtime or issues caused by:</p>
+      <ul>
+        <li>Customer-caused problems (e.g., misconfiguration, third-party software).</li>
+        <li>Internet service provider outages or issues outside CloudCode’s infrastructure.</li>
+        <li>Force majeure events (natural disasters, cyberattacks, government actions, etc.).</li>
+        <li>Free-tier or trial accounts (these do not qualify for uptime guarantees).</li>
+      </ul>
+
+      <h2>7. Customer Responsibilities</h2>
+      <p>Customers agree to:</p>
+      <ul>
+        <li>Maintain accurate contact information.</li>
+        <li>Report issues promptly and provide relevant logs or details when requested.</li>
+        <li>Follow CloudCode’s Acceptable Use Policy (AUP).</li>
+      </ul>
+
+      <h2>8. Changes to the SLA</h2>
+      <p>
+        CloudCode may modify this SLA with <strong>30 days' notice</strong>. Continued use of services after changes indicates acceptance
+        of the updated SLA.
+      </p>
+
+      <h2>9. Contact & Dispute Resolution</h2>
+      <p>
+        For SLA-related inquiries or to submit a credit request, please open a support ticket through the standard support channels.
+        Disputes will be resolved through good-faith negotiations; if unresolved, they will follow CloudCode’s standard dispute resolution process.
+      </p>
+
+      <h2>Acceptance</h2>
+      <p>
+        By using CloudCode services, you acknowledge and agree to the terms outlined in this SLA.
+      </p>
+    </div>
+  </div>
+</Layout>
